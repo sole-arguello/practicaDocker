@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx:
+    container_name: nginx_ejemplo
+    image: nginx:latest
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - 80:80
